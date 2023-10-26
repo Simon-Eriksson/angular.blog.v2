@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-page.component.css']
 })
 export class BlogPageComponent {
-
+  // Implement logic to display a single blog post with comments, likes, dislikes
 }

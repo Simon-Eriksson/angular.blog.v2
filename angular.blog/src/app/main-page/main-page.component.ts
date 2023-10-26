@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
-
+  // Implement logic to fetch and display blog posts
 }

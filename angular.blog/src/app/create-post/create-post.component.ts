@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-post.component.css']
 })
 export class CreatePostComponent {
-
+  // Implement logic to create a new blog post
 }
