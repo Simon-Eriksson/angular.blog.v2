@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlogService } from '../blog.service';
 
 @Component({
   selector: 'app-create-post',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class CreatePostComponent {
   // Implement logic to create a new blog post
+
+  newpost: string = "";
+
+  constructor(private createPost: BlogService) { }
 }

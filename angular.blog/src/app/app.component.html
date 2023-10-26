@@ -1,13 +1,2 @@
-<app-navbar (switchPerspective)="onSwitchPerspective($event)"></app-navbar>
-<div class="content">
-    <div *ngIf="perspective === 'user'">
-        <!-- Display user-specific content here -->
-        <app-user></app-user>
-    </div>
-    <div *ngIf="perspective === 'admin'">
-        <!-- Display admin-specific content here -->
-        <app-admin></app-admin>
-    </div>
-</div>
-
+<app-navbar></app-navbar>
 <router-outlet></router-outlet>

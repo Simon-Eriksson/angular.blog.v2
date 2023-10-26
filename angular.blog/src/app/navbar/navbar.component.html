@@ -1,3 +1,21 @@
-<div class="navbar">
-    <button (click)="togglePerspective()">Switch Perspective</button>
-</div>
+<nav class="navbar">
+
+    <button (click)="togglePerspective()">Switch Perspective(navbar)</button>
+
+    <div class="content">
+        <div *ngIf="perspective === 'user'">
+            <app-user></app-user>
+        </div>
+        <div *ngIf="perspective === 'admin'">
+            <app-admin></app-admin>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a routerLink="/"> Home </a>
+            <a routerLink="/blog/:id"> blog </a>
+            <a routerLink="/about-me"> About me </a>
+            <a routerLink="/admin/create-post"> Create new post</a>
+        </li>
+    </ul>
+</nav>
