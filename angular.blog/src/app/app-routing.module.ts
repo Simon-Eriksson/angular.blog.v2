@@ -8,7 +8,7 @@ import { CreatePostComponent } from './create-post/create-post.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
-  { path: 'blog/:id', component: BlogPageComponent },
+  { path: 'blog/:title', component: BlogPageComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'admin/create-post', component: CreatePostComponent },

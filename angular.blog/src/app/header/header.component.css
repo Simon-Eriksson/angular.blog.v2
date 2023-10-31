@@ -1,0 +1,8 @@
+.header {
+    background-color: #4caf50;
+    /* Green background for the header */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    padding: 20px;
+}

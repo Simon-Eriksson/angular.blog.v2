@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-  // Implement logic for the admin perspective, including creating new blog posts
 }

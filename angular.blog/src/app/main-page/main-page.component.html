@@ -1,1 +1,9 @@
-<p>main-page works!</p>
+<div *ngFor="let post of blogPosts">
+    <div class="post">
+        <br />
+        <img [src]="post.thumbnailUrl" width="400" height="200" alt="{{ post.title }}">
+        <h2>{{ post.title }}</h2>
+        <!-- länk till blog-page sidan -->
+        <a [routerLink]="['blog/', post.title]">Read More</a>
+    </div>
+</div>

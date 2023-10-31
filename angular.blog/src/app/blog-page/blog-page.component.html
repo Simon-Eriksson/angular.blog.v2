@@ -1,1 +1,26 @@
-<p>blog-page works!</p>
+<div class="blog-page">
+
+    <h1>{{ selectedPost?.title }}</h1>
+
+    <img height="400" width="600" [src]="selectedPost?.thumbnailUrl" alt="{{ selectedPost?.title }}">
+
+    <p>{{ selectedPost?.body }}</p>
+
+    <!-- Likes och Dislikes -->
+    <div class="likes-dislikes">
+        <span>Likes: {{ selectedPost?.likes }}</span>
+        <span>Dislikes: {{ selectedPost?.dislikes }}</span>
+        <button (click)="addLike()">Like</button>
+        <button (click)="addDislike()">Dislike</button>
+    </div>
+
+    <!-- kommentarer -->
+    <div class="comments">
+        <h3>Comments:</h3>
+        <ul>
+            <li *ngFor="let comment of selectedPost?.comments">{{ comment }}</li>
+        </ul>
+        <textarea [(ngModel)]="newComment" name="comment" placeholder="Add a comment"></textarea>
+        <button (click)="addComment(newComment); newComment = '' ">Add Comment</button>
+    </div>
+</div>

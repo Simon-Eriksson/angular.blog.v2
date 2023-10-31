@@ -1,0 +1,80 @@
+/* Blog Page Styles */
+.blog-page {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-page h1 {
+    color: #333;
+}
+
+.blog-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-page p {
+    color: #555;
+    /* Slightly darker text color for post content */
+}
+
+/* Likes and Dislikes Styles */
+.likes-dislikes {
+    margin-top: 10px;
+}
+
+.likes-dislikes span {
+    margin-right: 10px;
+}
+
+.likes-dislikes button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.likes-dislikes button:hover {
+    background-color: #45a945;
+}
+
+/* Comments Section Styles */
+.comments {
+    margin-top: 20px;
+}
+
+.comments h3 {
+    color: #333;
+}
+
+.comments ul {
+    list-style: none;
+}
+
+.comments li {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.comments textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+comments button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+comments button:hover {
+    background-color: #45a945;
+}

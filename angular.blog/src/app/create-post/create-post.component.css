@@ -1,0 +1,37 @@
+.create-post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.create-post h2 {
+    color: #333;
+}
+
+.create-post .form-group {
+    margin-bottom: 10px;
+}
+
+.create-post label {
+    color: #333;
+}
+
+.create-post input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.create-post button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.create-post button:hover {
+    background-color: #45a945;
+}

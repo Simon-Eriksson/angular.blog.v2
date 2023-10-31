@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent {
-  // Implement a contact form and logic to handle form submission
 }

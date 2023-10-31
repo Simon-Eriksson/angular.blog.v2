@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +11,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { AdminComponent } from './admin/admin.component';
 import { CreatePostComponent } from './create-post/create-post.component';
 import { UserComponent } from './user/user.component';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +23,12 @@ import { UserComponent } from './user/user.component';
     AboutMeComponent,
     AdminComponent,
     CreatePostComponent,
-    UserComponent
+    UserComponent,
+    NavbarAdminComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

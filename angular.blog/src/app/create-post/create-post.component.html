@@ -1,11 +1,27 @@
-<h1>ADMIN</h1>
-<h2>Create Post</h2>
-<label>Title</label>
-<input #title />
+<h2>Create a New Blog Post</h2>
 
-<br />
-<label>Content</label>
-<input #content />
+<form (ngSubmit)="createPost()" #postForm="ngForm">
 
-<br />
-<button>Post</button>
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required>
+    </div>
+
+    <div class="form-group">
+        <label for="thumbnailUrl">Thumbnail URL:</label>
+        <input type="text" id="thumbnailUrl" name="thumbnailUrl" [(ngModel)]="newPost.thumbnailUrl" required>
+    </div>
+
+    <div class="form-group">
+        <label for="body">body:</label>
+        <input type="text" id="body" name="body" [(ngModel)]="newPost.body" required>
+    </div>
+
+    <div class="form-group">
+        <label for="date">date:</label>
+        <input type="text" id="creationDatel" name="creationDate" [(ngModel)]="newPost.creationDate" required>
+    </div>
+
+    <button type="submit" [disabled]="postForm.invalid || isSubmitted">Create Post</button>
+
+</form>

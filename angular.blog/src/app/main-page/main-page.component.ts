@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BlogPost } from '../blog-post';
+import { BlogService } from '../blog.service';
 
 @Component({
   selector: 'app-main-page',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
-  // Implement logic to fetch and display blog posts
+  // hämta blog-post
+  blogPosts: BlogPost[];
+
+  constructor(private blogService: BlogService) {
+    this.blogPosts = this.blogService.getAllBlogPosts();
+  }
+
 }
