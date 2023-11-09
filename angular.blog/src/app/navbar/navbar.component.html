@@ -1,6 +1,8 @@
 <nav class="navbar">
 
-    <button (click)="togglePerspective()">Switch: user <-> admin</button>
+    <button (click)="togglePerspective()">
+        {{ perspective === 'admin' ? 'Switch: user' : 'Switch: admin' }}
+    </button>
 
     <ul>
         <li *ngIf="perspective === 'user'">

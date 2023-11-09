@@ -45,7 +45,7 @@ export class BlogService {
 
   // + på dislike ( kan ändra till minus senare)
   addDislike(post: BlogPost) {
-    post.dislikes++;
+    post.dislikes--;
     this.saveToLocalStorage();
   }
 
