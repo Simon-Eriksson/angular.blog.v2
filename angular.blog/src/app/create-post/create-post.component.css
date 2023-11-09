@@ -1,37 +1,43 @@
-.create-post {
-    background-color: #fff;
-    border: 1px solid #ccc;
+.create-post-container {
+    background-color: rgba(17, 24, 39);
+    color: #fff;
     padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.create-post h2 {
-    color: #333;
+.create-post-container h2 {
+    color: red;
 }
 
-.create-post .form-group {
-    margin-bottom: 10px;
+.form-group {
+    margin: 10px 0;
 }
 
-.create-post label {
-    color: #333;
+.form-group label {
+    color: #fff;
+    display: block;
 }
 
-.create-post input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+.form-group input[type="text"] {
+    background-color: #fff;
+    color: rgba(17, 24, 39);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
 }
 
-.create-post button {
-    background-color: #4caf50;
+button[type="submit"] {
+    background-color: red;
     color: #fff;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.create-post button:hover {
-    background-color: #45a945;
+button[type="submit"]:hover {
+    background-color: #ff5555;
 }

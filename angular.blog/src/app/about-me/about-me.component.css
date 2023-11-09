@@ -1,0 +1,56 @@
+.about-me {
+    background-color: rgba(17, 24, 39);
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.about-me h3 {
+    color: red;
+}
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.about-me p {
+    margin: 10px 0;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label {
+    color: #fff;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    background-color: #fff;
+    color: rgba(17, 24, 39);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+}
+
+button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff5555;
+}

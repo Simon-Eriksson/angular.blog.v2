@@ -10,8 +10,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./create-post.component.css']
 })
 export class CreatePostComponent {
-  // Implementera logik för att skapa en ny blog post
 
+  // Implementera logik för att skapa en ny blog post
   newPost: BlogPost = {
     title: '',
     thumbnailUrl: '',

@@ -1,80 +1,86 @@
-/* Blog Page Styles */
 .blog-page {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: rgba(17, 24, 39);
+    color: #fff;
     padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    border-radius: 5px;
 }
 
 .blog-page h1 {
-    color: #333;
+    color: red;
 }
 
 .blog-page img {
     max-width: 100%;
     height: auto;
+    margin: 10px 0;
 }
 
 .blog-page p {
-    color: #555;
-    /* Slightly darker text color for post content */
+    margin: 10px 0;
 }
 
-/* Likes and Dislikes Styles */
 .likes-dislikes {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .likes-dislikes span {
+    color: #fff;
     margin-right: 10px;
 }
 
 .likes-dislikes button {
-    background-color: #4caf50;
+    background-color: red;
     color: #fff;
     border: none;
+    border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .likes-dislikes button:hover {
-    background-color: #45a945;
+    background-color: #ff5555;
 }
 
-/* Comments Section Styles */
 .comments {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .comments h3 {
-    color: #333;
+    color: #fff;
+    margin: 10px 0;
 }
 
 .comments ul {
     list-style: none;
+    padding: 0;
 }
 
 .comments li {
-    border: 1px solid #ccc;
-    padding: 5px;
     margin: 5px 0;
 }
 
 .comments textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: rgba(17, 24, 39);
+    background-color: #fff;
+    margin: 10px 0;
 }
 
-comments button {
-    background-color: #4caf50;
+.comments button {
+    background-color: red;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 comments button:hover {
-    background-color: #45a945;
+    background-color: #ff5555;
 }

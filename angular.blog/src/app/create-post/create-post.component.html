@@ -1,27 +1,31 @@
-<h2>Create a New Blog Post</h2>
+<div class="create-post-container">
 
-<form (ngSubmit)="createPost()" #postForm="ngForm">
+    <h2>Create a New Blog Post</h2>
 
-    <div class="form-group">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required>
-    </div>
+    <form (ngSubmit)="createPost()" #postForm="ngForm">
 
-    <div class="form-group">
-        <label for="thumbnailUrl">Thumbnail URL:</label>
-        <input type="text" id="thumbnailUrl" name="thumbnailUrl" [(ngModel)]="newPost.thumbnailUrl" required>
-    </div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required>
+        </div>
 
-    <div class="form-group">
-        <label for="body">body:</label>
-        <input type="text" id="body" name="body" [(ngModel)]="newPost.body" required>
-    </div>
+        <div class="form-group">
+            <label for="thumbnailUrl">Thumbnail URL:</label>
+            <input type="text" id="thumbnailUrl" name="thumbnailUrl" [(ngModel)]="newPost.thumbnailUrl" required>
+        </div>
 
-    <div class="form-group">
-        <label for="date">date:</label>
-        <input type="text" id="creationDatel" name="creationDate" [(ngModel)]="newPost.creationDate" required>
-    </div>
+        <div class="form-group">
+            <label for="body">body:</label>
+            <input type="text" id="body" name="body" [(ngModel)]="newPost.body" required>
+        </div>
 
-    <button type="submit" [disabled]="postForm.invalid || isSubmitted">Create Post</button>
+        <div class="form-group">
+            <label for="date">date:</label>
+            <input type="text" id="creationDatel" name="creationDate" [(ngModel)]="newPost.creationDate" required>
+        </div>
 
-</form>
+        <button type="submit" [disabled]="postForm.invalid || isSubmitted">Create Post</button>
+
+    </form>
+
+</div>

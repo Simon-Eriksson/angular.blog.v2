@@ -1,12 +1,9 @@
 .post {
-    background-color: #fff;
-    /* White background for blog posts */
+    background-color: rgba(17, 24, 39);
     border: 1px solid #ccc;
-    /* Gray border */
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    /* Drop shadow for posts */
 }
 
 .post img {
@@ -15,17 +12,14 @@
 }
 
 .post h2 {
-    color: #333;
-    /* Dark text color for post titles */
+    color: #fff;
 }
 
 .post a {
-    color: #4caf50;
-    /* Green color for "Read More" link */
+    color: #fff;
     text-decoration: none;
 }
 
 .post a:hover {
     text-decoration: underline;
-    /* Underline link on hover */
 }

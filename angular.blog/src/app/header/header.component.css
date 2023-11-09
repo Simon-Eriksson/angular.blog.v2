@@ -1,8 +1,6 @@
 .header {
-    background-color: #4caf50;
-    /* Green background for the header */
+    background-color: rgba(17, 24, 39);
     color: #fff;
-    /* White text */
     text-align: center;
     padding: 20px;
 }
